@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* ... Existing CSS styles ... */
+
+    /* Additional styles for social media icons */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    .social-icons a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+      transition: transform 0.2s, background-color 0.2s;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-icons a:hover {
+      background-color: #ef6c00;
+      transform: scale(1.1);
+    }
+
+    footer {
+      /* ... Styles for footer ... */
+    }
+
+    .car-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .car-image:hover {
+      transform: scale(1.05);
+    }
+
+    /* Additional styles for zoom-in and zoom-out effects */
+    .zoom-in {
+      transform: scale(1.2);
+      z-index: 1;
+    }
+
+    .zoom-out {
+      transform: scale(0.8);
+    }
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+      opacity: 0.8;
+    }
+
+    .background img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: slide 20s infinite alternate;
+    }
+
+    @keyframes slide {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
+
+        /* Additional styles for audio and background */
+        .audio-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 50px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .audio-controls {
+      margin-right: 10px;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('supra.jpg');
+      background-size: cover;
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Background Image -->
+  <div class="background-image"></div>
+  <header>
+    <h1>Patel Car Website</h1>
+  </header>
+
+
+  <nav>
+    <!-- ... Navigation links ... -->
+  </nav>
+
+  <main>
+    <section id="featured-cars">
+      <h2>Featured Cars</h2>
+      <div class="car">
+        <img src="supercar.jpg" alt="Car 1" class="car-image">
+        <h3>Car Model 1</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+     
+        </div>
+
+      <div class="car">
+        <img src="old.jpg" alt="Car 2" class="car-image">
+        <h3>Car Model 2</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <p><a href="#">For More click here </a></p>
+
+      </div>
+    </section>
+
+    <section id="all-cars">
+      <h2>All Cars</h2>
+      <div class="car">
+        <img src="web.jpg" alt="Car 3" class="car-image">
+        <h3>Car Model 3</h3>
+        <p>For Automobili Lamborghini, the revolutionary spirit is a trademark: whether it's design inspired by aeronautics or technologies such as the V12 engine or carbon fiber, 
+          pushing the commonly accepted limits is part of our philosophy.
+           The Aventador was designed to go beyond the concept of performance, immediately setting a benchmark in the field of super sports cars and ahead of the cars of the future.
+           A family of supercars already inscribed in the legend.<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+      </div>
+
+      <div class="car">
+        <img src="R.jpg" alt="Car 4" class="car-image">
+        <h3>Car Model 4</h3>
+        <p><br>he horsepower of this model has also been improved. This is due to the fact that two turbochargers, which are larger in size, are now located on the top of the car instead of being at their former position, which was at the bottom of the car. The intercoolers and the new exhaust system are some other areas where changes have been made. Another impressive change that has been brought about in the car is that the backpressure has witnessed a decrease and as a result, consumption of fuel is reduced to a slight extent while the power output has increased.
+          Safety is not something that one would have to be worried about when it comes to this car. It is provided with dampers that are swift in terms of response. Furthermore, it has been ensured that there is an improvement in control. Optimal balance has also been ensured. You will find that the car also has acceleration you are unlikely to find elsewhere, and precise interaction of the tires with center lock fixing to ensure that optimal stability in handling is provided. The braking system is commendable in terms of performance.
+          
+          A new carbon body has been developed for the car using carbon monocoque that ensures optimal safety. Another change is that a new spoiler has been incorporated into the car, which reduces the wind noise while at the same time buffering the interior. The depth of the window sill, air intake, and gull-wing doors are some other features to make this model remarkable
+        Modal No: 1820#legendsports car<br>
+        Fuel type : petrol <br>
+        Price : $1,000,000</p>
+        <a href="#">For More click here </a>
+      </div>
+
+      <div class="car">
+        <img src="J.jpg" alt="Car 2" class="car-image">
+        <h3>Car Model 5</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+
+      </div>
+
+
+      <div class="car">
+        <img src="jaipat.jpg" alt="Car 2" class="car-image">
+        <h3>Car Model 6</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+
+      </div>
+
+      <div class="car">
+        <img src="jainish.jpg" alt="Car 2" class="car-image">
+        <h3>Car Model 7</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+
+      </div>
+
+      <div class="car">
+        <img src="lamborghini-sian-roadster-1024x576.jpg" alt="Car 2" class="car-image">
+        <h3>Car Model 8</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+         
+      </div>
+
+       <div class="car">
+        <img src="2912.jpg" alt="Car 2" class="car-image">
+        <h3>Car Model 9</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+
+      </div>
+
+      <div class="car">
+        <img src="mercedes-benz-amg-gt-front-l6-1920x1080.jpg" alt="Car 2" class="car-image">
+        <h3>Car Model 10</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+
+      </div>
+
+      <div class="car">
+        <img src="dhrunish.jpg" alt="Car 2" class="car-image">
+        <h3>Car Model 11</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+
+      </div>
+
+      <div class="car">
+        <img src="wp2792225.jpg" alt="Car 2" class="car-image">
+        <h3>Car Model 12</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+
+      </div>
+
+      <div class="car">
+        <img src="Rock.jpg" alt="Car 2" class="car-image">
+        <h3>Car Model 13</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+
+      </div>
+
+      <div class="car">
+        <img src="wp27974.jpg" alt="Car 2" class="car-image">
+        <h3>Car Model 14</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+
+      </div>
+
+      <div class="car">
+        <img src="385f2a4db60c54e8baca3fae914f3132.jpg" alt="Car 2" class="car-image">
+        <h3>Car Model 15</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+
+      </div>
+
+      <div class="car">
+        <img src="b749ae6115712cfaf8b2ac3b7b7a95b7.jpg" alt="Car 2" class="car-image">
+        <h3>Car Model 16</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+
+      </div>
+
+      <div class="car">
+        <img src="ds-e-tense-concept-2016-geneva-motor-show_100546953.jpg" alt="Car 2" class="car-image">
+        <h3>Car Model 17</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+
+      </div>
+
+      <div class="car">
+        <img src="nissan_bladeglider_07_biggalleryimage.jpg" alt="Car 2" class="car-image">
+        <h3>Car Model 18</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+
+      </div>
+
+      <div class="car">
+        <img src="wp45.jpg" alt="Car 2" class="car-image">
+        <h3>Car Model 19</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+
+      </div>
+
+      <div class="car">
+        <img src="system.jpg" alt="Car 2" class="car-image">
+        <h3>Car Model 20</h3>
+        <p>This car is of yellow and orange shade<br>
+          Modal No: 1820#legendsports car<br>
+          Fuel type : petrol <br>
+          Price : 90,99,93,900</p>
+          <a href="#">For More click here </a>
+
+      </div>
+
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Patel Car Website. All rights reserved.</p>
+    <p>Contact: contact@jainishpatel@gmail.com</p>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://www.google.com" target="_blank" title="Google" aria-label="Google">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="https://www.facebook.com" target="_blank" title="Facebook" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" title="Instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Google" target="_blank" title="Wikipedia" aria-label="W">
+        W
+      </a>
+    </div>
+  </footer>
+  <!-- Audio Player -->
+  <div class="audio-container">
+    <div class="audio-controls" id="play-pause">
+      <i class="fas fa-play"></i>
+    </div>
+    <audio id="audio" src="Brown-Munde_320(PaglaSongs).mp3" preload="auto"></audio>
+  </div>
+
+  <!-- Font Awesome Icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+  <script>
+    // JavaScript for audio player
+    const audio = document.getElementById('audio');
+    const playPause = document.getElementById('play-pause');
+
+    playPause.addEventListener('click', function () {
+      if (audio.paused) {
+        audio.play();
+        playPause.innerHTML = '<i class="fas fa-pause"></i>';
+      } else {
+        audio.pause();
+        playPause.innerHTML = '<i class="fas fa-play"></i>';
+      }
+    });
+  </script>
+
+  <script>
+    function zoomImage(image) {
+      if (image.classList.contains("zoom-in")) {
+        image.classList.remove("zoom-in");
+      } else {
+        image.classList.add("zoom-in");
+      }
+    }
+    
+    </script>
+     </div>    
+  </body>
+</html>
